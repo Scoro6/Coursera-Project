@@ -1,209 +1,225 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat',sans-serif;
-    height:100vh;
-    overflow: hidden;
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
-.wrapper{
-    width:100%;
-    height:100%;
-    overflow-x:hidden;
-    overflow-y:scroll;
-    scroll-behavior: smooth;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
-    width:17px;
-    background-color: #eee;
+::-webkit-scrollbar {
+  width: 17px;
+  background-color: #eee;
 }
-::-webkit-scrollbar-thumb{
-    background:linear-gradient(to bottom,#ec008e,#FC6767);
-    border-radius:16px;
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #11c1ce, #01fff2);
+  border-radius: 16px;
 }
-.navbar{
-    display:flex;
-    color:#fff;
-    padding-left:5%;
-    height:10vh;
-    width:90%;
-    justify-content: space-between;
-    align-items:center;
+.navbar {
+  display: flex;
+  color: #fff;
+  padding-left: 5%;
+  height: 10vh;
+  width: 100%;
+  padding-right: 5%;
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar h3{
-    font-weight: 300;
-    letter-spacing:1px;
+.navbar h3 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 5px;
 }
-.heading{
-    color:#fff;
+.logo {
+  display: flex;
+  align-items: center;
 }
-.container{
-    height:100vh;
-    background-image:linear-gradient(90.1deg, #EC008C 9.73%, #FC6767 68.84%);
+.logo img {
+  width: 26px;
+  height: auto;
 }
-.intro{
-    width:40%;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    transform:translateY(-10%);
-    font-family:'Poppins',sans-serif;
-    padding-left: 5%;
-    color:#FBFBFD
+.heading {
+  color: #000;
 }
-.intro h1{
-    font-size:50px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    z-index:-1;
+.container {
+  height: 100vh;
+  background: #5de4d9;
 }
-.intro p{
-    font-size:25px;
-    line-height:38px;
+.intro {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-10%);
+  font-family: "Poppins", sans-serif;
+  padding-left: 5%;
+  color: #131113;
+  padding-top: 5%;
 }
-.header{
-    height:100vh;
-    background-image:url('../images/Leagues\ Background.png');
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position: bottom right;
+.intro h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  z-index: -1;
+  text-transform: uppercase;
 }
-.container-about{
-    height:100%;
+.intro p {
+  font-size: 24px;
+  line-height: 36px;
 }
-.header-about{
-    height:100vh;
-    background-image:url('../images/About\ Background.png');
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position: bottom right;
+.header {
+  height: 100vh;
+  background-image: url("../images/cricket-background.png");
+  background-repeat: no-repeat;
+  background-position: 90%;
 }
-main{
-    margin-top:100px;
-    height:200vh;
-    background-image:url('../images/Background-random.png');
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:left;
-    opacity:1;
+.container-about {
+  height: 100%;
 }
-.isl,.ipl,.pkl{
-    display:flex;
-    width:100%;
-    justify-content:space-between;
-    align-items:center;
-    
+main {
+  margin-top: 100px;
+  height: 200vh;
+  background-image: url("../images/Background-random.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  opacity: 1;
 }
-.content{
-    width:70%;
-    margin:20px;
-    position:relative;
-    padding:20px;
-    color:black;
+.isl,
+.ipl,
+.pkl {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
-.content h2{
-    text-transform: uppercase;
-    text-align:center;
-    margin-bottom:10px;
+.content {
+  width: 70%;
+  margin: 20px;
+  position: relative;
+  padding: 20px;
+  color: black;
 }
-.image{
-    width:30%;
+.content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.image img{
-    width:100%;
-    height:auto;
-    align-self: center;
-    margin-bottom:15%;
+.image {
+  width: 30%;
 }
-.button{
- display:block;
- font-size:20px;
- text-decoration:none;
- background-color:black;
- color:white;
- padding:20px;
- padding-top:10px;
- padding-bottom:10px;
- border-radius:50px;
- width:150px;
- margin:20px auto;
- text-align:center;
- box-shadow:1px 1px 6px 1px #000;
+.image img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  margin-bottom: 15%;
 }
-.burger line{
-    stroke:black;
+.button {
+  display: block;
+  background: #141113;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  text-align: center;
+  width: 160px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 45px;
+  text-decoration: none;
+  text-align: center;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #7bd2c2;
+  margin: 20px auto;
 }
-.burger-open line{
-    stroke:white;
+.burger line {
+  stroke: black;
 }
-.links{
-    position:absolute;
-    background-color:#7840FF;
-    width:100%;
-    height:40vh;
-    top:0px;
-    left:0px;
-    transform:translateY(-100%);
-    display:grid;
-    width:100%;
-    grid-template-columns:5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
-    justify-items: center;
-    align-items: center;
-    opacity:0;
-    transition:all 0.5s ease-in-out;
-    z-index:1;
+.burger-open line {
+  stroke: white;
 }
-.toggle{
-    transform:translateY(0);
-    opacity:1;
+.links {
+  position: absolute;
+  background-color: #141113;
+  width: 100%;
+  height: 40vh;
+  top: 0px;
+  left: 0px;
+  transform: translateY(-100%);
+  display: grid;
+  width: 100%;
+  grid-template-columns: 5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
+  justify-items: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
-.home-link{
-    grid-column:2/3;
+.toggle {
+  transform: translateY(0);
+  opacity: 1;
 }
-.isl-link{
-    grid-column:4/5;
+.home-link {
+  grid-column: 2/3;
 }
-.ipl-link{
-    grid-column:6/7;
+.isl-link {
+  grid-column: 4/5;
 }
-.pkl-link{
-    grid-column:8/9;
+.ipl-link {
+  grid-column: 6/7;
 }
-.about-link{
-    grid-column:10/11;
+.pkl-link {
+  grid-column: 8/9;
 }
-.links div{
-    opacity:0;
+.about-link {
+  grid-column: 10/11;
 }
-.links a{
-    text-decoration:none;
-    font-size:24px;
-    color:#FBFBFD;
+.links div {
+  opacity: 0;
 }
-.toggle a{
-    opacity:1;
+.links a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #5de4d9;
 }
-.links a:hover{
-    opacity:0.9;
-    text-decoration: underline;
+.toggle a {
+  opacity: 1;
 }
-.navbar h3,.menu{
-    z-index:2;
+.links a:hover {
+  opacity: 0.9;
+  text-decoration: underline;
 }
-.menu{
-    cursor: pointer;
+.navbar h3,
+.menu {
+  z-index: 2;
+}
+.menu {
+  cursor: pointer;
 }
 
-@keyframes navLinkFade{
-    from{
-        opacity:0;
-        transform:translateY(-50px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0px);
-    }
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    background-image: url("../images/Leagues\ Background-tablet.png");
+  }
 }
