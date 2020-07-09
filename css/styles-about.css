@@ -16,7 +16,7 @@ body {
   border-radius: 16px;
 }
 .heading {
-  color: white;
+  color: #fdfdfd;
 }
 .heading-nav {
   color: #fe4d6f;
@@ -24,9 +24,11 @@ body {
 .navbar {
   display: flex;
   color: #fff;
-  padding-left: 5%;
+  background-color: #e4012e;
+  padding-left: 15%;
+  padding-right: 15%;
   height: 10vh;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -36,8 +38,7 @@ body {
 }
 .header-about {
   height: 100vh;
-  background-color: #fe4d6f;
-  background-image: url("../images/background-about.png");
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: 100%;
 }
@@ -62,13 +63,14 @@ body {
   font-weight: normal;
   font-size: 36px;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
-  color: white;
+  color: #000;
 }
 .content p:nth-child(2) {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
+  color: #e4012e;
   text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
 }
@@ -78,7 +80,7 @@ body {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  color: white;
+  color: #000;
 }
 .button {
   display: block;
@@ -100,37 +102,48 @@ body {
   position: absolute;
   background-color: #141113;
   width: 100%;
-  height: 40vh;
+  height: 100vh;
   top: 0px;
   left: 0px;
-  transform: translateY(-100%);
-  display: grid;
-  width: 100%;
-  grid-template-columns: 5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
-  justify-items: center;
+  clip-path: circle(0%);
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
   z-index: 1;
 }
 .toggle {
-  transform: translateY(0);
+  clip-path: circle(75%);
   opacity: 1;
 }
 .home-link {
-  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 .isl-link {
-  grid-column: 4/5;
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 .ipl-link {
-  grid-column: 6/7;
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 .pkl-link {
-  grid-column: 8/9;
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 .about-link {
-  grid-column: 10/11;
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 .links div {
   opacity: 0;

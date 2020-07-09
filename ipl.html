@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -87,35 +88,35 @@
       <section class="teams-section">
         <h2 class="heading">IPL Teams</h2>
         <div class="teams-ipl">
-          <div class="team1">
+          <div class="team1" data-aos="zoom-in">
             <img src="images/ipl/csk.png" alt="Chennai Super Kings" />
             <p>Chennai Super Kings</p>
           </div>
-          <div class="team2">
+          <div class="team2" data-aos="zoom-in">
             <img src="images/ipl/dc.png" alt="Delhi Capitals" />
             <p>Delhi Capitals</p>
           </div>
-          <div class="team3 kkr">
+          <div class="team3 kkr" data-aos="zoom-in">
             <img src="images/ipl/kkr.png" alt="Kolkata Knight Riders" />
             <p>Kolkata Knight Riders</p>
           </div>
-          <div class="team4 kxip">
+          <div class="team4 kxip" data-aos="zoom-in">
             <img src="images/ipl/kxip.png" alt="Kings XI Punjab" />
             <p>Kings XI Punjab</p>
           </div>
-          <div class="team6 mi">
+          <div class="team6 mi" data-aos="zoom-in">
             <img src="images/ipl/mi.png" alt="Mumbai Indians" />
             <p>Mumbai Indians</p>
           </div>
-          <div class="team7 rcb">
+          <div class="team7 rcb" data-aos="zoom-in">
             <img src="images/ipl/rcb.png" alt="Royal Challengers Bangalore" />
             <p>Royal Challengers Bangalore</p>
           </div>
-          <div class="team8 rr">
+          <div class="team8 rr" data-aos="zoom-in">
             <img src="images/rr.png" alt="Rajasthan Royals" />
             <p>Rajasthan Royals</p>
           </div>
-          <div class="team9 srh">
+          <div class="team9 srh" data-aos="zoom-in">
             <img src="images/ipl/srh.png" alt="Sunrisers Hyderabad" />
             <p>Sunrisers Hyderabad</p>
           </div>
@@ -124,7 +125,13 @@
       <section class="facts">
         <h2 class="heading">IPL Facts</h2>
         <div class="grid">
-          <div class="content">
+          <div
+            class="content"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-out-back"
+            data-aos-duration="1500"
+          >
             <ul class="details-list">
               <li>First League : 2008</li>
               <li>Tournament : Double Round-Robin and Playoffs</li>
@@ -197,6 +204,13 @@
     <footer>
       <p>Designed by GAGAN ARORA for the coursera capstone project.</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/apps.js"></script>

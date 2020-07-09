@@ -16,6 +16,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 2;
 }
 .mynavbar h3 {
   color: #fbfbfd;
@@ -24,6 +25,7 @@
 body {
   font-size: 16px;
   width: 100%;
+  height: 100vh;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   background-color: #fbfbfd;
@@ -152,6 +154,7 @@ body {
 .team12 img {
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 .kkr,
 .kxip,
@@ -412,8 +415,14 @@ footer p {
   .mynavbar h3 {
     font-size: 17px;
   }
+  footer {
+    justify-content: center;
+  }
   footer p {
     font-size: 10px;
+  }
+  .image p {
+    font-size: 14px;
   }
 }
 .toggle {

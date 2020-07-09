@@ -6,14 +6,7 @@
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
-  overflow: hidden;
-}
-.wrapper {
-  width: 100%;
-  height: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 17px;
@@ -48,9 +41,13 @@ body {
 }
 .heading {
   color: #000;
+  transition: color 0.4s ease-in;
+}
+.heading-nav {
+  color: #5de4d9;
 }
 .container {
-  height: 100vh;
+  height: 100%;
   background: #5de4d9;
 }
 .intro {
@@ -66,8 +63,8 @@ body {
   padding-top: 5%;
 }
 .intro h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
-  letter-spacing: 2px;
   z-index: -1;
   text-transform: uppercase;
 }
@@ -80,9 +77,6 @@ body {
   background-image: url("../images/cricket-background.png");
   background-repeat: no-repeat;
   background-position: 90%;
-}
-.container-about {
-  height: 100%;
 }
 main {
   margin-top: 100px;
@@ -121,6 +115,10 @@ main {
   height: auto;
   align-self: center;
   margin-bottom: 15%;
+}
+.ipl .image img {
+  margin-left: 15%;
+  width: 70%;
 }
 .button {
   display: block;
@@ -207,7 +205,14 @@ main {
 .menu {
   cursor: pointer;
 }
-
+.footer {
+  background-color: #5de4d9;
+  padding: 10px;
+  text-align: right;
+}
+.footer a {
+  color: black;
+}
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -218,8 +223,211 @@ main {
     transform: translateY(0px);
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  .intro h1 {
+    font-size: 32px;
+  }
+  .intro p {
+    font-size: 18px;
+  }
   .header {
-    background-image: url("../images/Leagues\ Background-tablet.png");
+    background-position: 100%;
+  }
+  .content {
+    width: 60%;
+  }
+  .image {
+    width: 40%;
+  }
+  main {
+    background-image: none;
+    background-position: left;
+    background-size: contain;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    background-size: contain;
+  }
+  .intro p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .button {
+    border-radius: 25px;
+    text-align: center;
+    width: 100px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+  }
+  .isl,
+  .ipl,
+  .pkl {
+    flex-direction: column-reverse;
+  }
+  .content {
+    width: 100%;
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .image {
+    width: 50%;
+  }
+  .isl .button,
+  .ipl .button,
+  .pkl .button {
+    font-size: 16px;
+    width: 120px;
+  }
+  .links a {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    background: none;
+    height: 100%;
+  }
+  .intro {
+    width: 100%;
+    height: 45%;
+    padding-right: 5%;
+    justify-content: flex-start;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .intro p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .content h2 {
+    font-size: 30px;
+  }
+  .mobile-back {
+    width: 100%;
+    height: 45%;
+    background-color: #fff;
+    margin-bottom: 5%;
+  }
+  .batsman {
+    height: 90%;
+    width: 100%;
+    background: url("../images/batsman.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .back {
+    height: 10%;
+    width: 100%;
+    margin: 0px;
+    background-color: #5de4d9;
+  }
+  .isl,
+  .ipl,
+  .pkl {
+    flex-direction: column-reverse;
+  }
+  .content {
+    width: 100%;
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+  .content p {
+    font-size: 17px;
+  }
+  .image {
+    width: 70%;
+  }
+  .isl .button,
+  .ipl .button,
+  .pkl .button {
+    font-size: 14px;
+    width: 100px;
+    padding: 3px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    height: 100%;
+  }
+  .intro {
+    height: 60%;
+    justify-content: center;
+  }
+  .mobile-back {
+    height: 40%;
+  }
+  .intro h1 {
+    font-size: 25px;
+  }
+  .intro p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  svg {
+    width: 35px;
+    height: 50px;
+  }
+  .image {
+    width: 80%;
+  }
+  .links a {
+    font-size: 16px;
+  }
+  .ipl .image {
+    width: 60%;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .intro {
+    margin-top: 70px;
+  }
+  #main {
+    padding-top: 100px;
+  }
+  .content h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .content p {
+    font-size: 13px;
+  }
+  .button,
+  .isl .button,
+  .ipl .button,
+  .pkl .button {
+    width: 80px;
+    font-size: 12px;
+    padding: 1px;
+    line-height: 30px;
+  }
+  .footer p {
+    font-size: 10px;
   }
 }
